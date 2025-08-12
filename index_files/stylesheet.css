@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-BlackItalic.eot');
+    src: local('XXII Centar Black Italic'), local('XXIICentar-BlackItalic'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-BlackItalic.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-BlackItalic.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBoldItalic.eot');
+    src: local('XXII Centar Extra Bold Italic'), local('XXIICentar-ExtraBoldItalic'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBoldItalic.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBoldItalic.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-MediumItalic.eot');
+    src: local('XXII Centar Medium Italic'), local('XXIICentar-MediumItalic'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-MediumItalic.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-MediumItalic.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-LightItalic.eot');
+    src: local('XXII Centar Light Italic'), local('XXIICentar-LightItalic'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-LightItalic.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-LightItalic.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBold.eot');
+    src: local('XXII Centar Extra Bold'), local('XXIICentar-ExtraBold'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBold.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBold.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-Italic.eot');
+    src: local('XXII Centar Italic'), local('XXIICentar-Italic'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Italic.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Italic.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-Medium.eot');
+    src: local('XXII Centar Medium'), local('XXIICentar-Medium'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Medium.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Medium.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-Black.eot');
+    src: local('XXII Centar Black'), local('XXIICentar-Black'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Black.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Black.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Black.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-Regular.eot');
+    src: local('XXII Centar Regular'), local('XXIICentar-Regular'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Regular.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Regular.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-ThinItalic.eot');
+    src: local('XXII Centar Thin Italic'), local('XXIICentar-ThinItalic'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ThinItalic.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ThinItalic.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-Light.eot');
+    src: local('XXII Centar Light'), local('XXIICentar-Light'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Light.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Light.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Light.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLight.eot');
+    src: local('XXII Centar Extra Light'), local('XXIICentar-ExtraLight'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLight.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLight.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLightItalic.eot');
+    src: local('XXII Centar Extra Light Italic'), local('XXIICentar-ExtraLightItalic'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLightItalic.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLightItalic.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-Thin.eot');
+    src: local('XXII Centar Thin'), local('XXIICentar-Thin'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Thin.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Thin.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-Bold.eot');
+    src: local('XXII Centar Bold'), local('XXIICentar-Bold'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Bold.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Bold.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'XXII Centar';
+    src: url('/catalog/view/theme/journal2/fonts/XXIICentar-BoldItalic.eot');
+    src: local('XXII Centar Bold Italic'), local('XXIICentar-BoldItalic'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-BoldItalic.woff2') format('woff2'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-BoldItalic.woff') format('woff'),
+        url('/catalog/view/theme/journal2/fonts/XXIICentar-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
