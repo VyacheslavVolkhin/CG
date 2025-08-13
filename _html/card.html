@@ -331,7 +331,7 @@
 									</div>
 								</div>
 								<div class="options-action">
-									<a href="" class="link-main">Все характеристики</a>
+									<a href="" class="link-main" onclick="var tab = document.querySelector('.product-tabs [href=\'#tab-specification\']'); tab.click(); tab.scrollIntoView({ behavior: 'smooth', block: 'start' });  return false;">Все характеристики</a>
 								</div>
 							</div>
 							<!-- /features -->
@@ -663,10 +663,7 @@
 					<li class="active"><a href="#tab-description" data-toggle="tab">Описание</a></li>
 					<li><a href="#tab-specification" data-toggle="tab">Характеристики</a></li>
 					<li><a href="#tab-qap" data-toggle="tab">Вопросы и ответы</a></li>
-
-
-
-					<li><a href="#tab-review" data-toggle="tab">Отзывов (0)</a></li>
+					<li class=""><a href="#tab-review" data-toggle="tab">Отзывов (0)</a></li>
 				</ul>
 				<div class="tabs-content">
 					<div class="tab-pane tab-content" id="tab-qap">
@@ -796,67 +793,99 @@
 
 					</div>
 					<div class="tab-pane tab-content " id="tab-review">
-						<form class="form-horizontal" id="form-review">
-							<div id="review">
-								<p>Нет отзывов о данном товаре.</p>
+						
+						<!--form-review-box-->
+						<div class="form-review-box">
+							<div class="frm-title-wrap">
+								<div class="frm-title">Напишите отзыв</div>
 							</div>
-							<div id="review-title">Написать отзыв</div>
-							<div class="form-group required">
-								<div class="col-sm-12"><label class="control-label" for="input-name">Имя</label><input
-										type="text" name="name" value="" id="input-name" class="form-control"></div>
-							</div>
-							<div class="form-group required">
-								<div class="col-sm-12"><label class="control-label" for="input-review">Ваш
-										отзыв:</label><textarea name="text" rows="5" id="input-review"
-										class="form-control"></textarea>
-									<div class="help-block"><span style="color: #FF0000;">Примечание:</span> HTML
-										разметка не поддерживается! Используйте обычный текст.</div>
-								</div>
-							</div>
-							<div class="form-group required">
-								<div class="col-sm-12"><label class="control-label">Оценка:</label>
-									&nbsp;&nbsp;&nbsp; Плохо&nbsp;
-									<input type="radio" name="rating" value="1">
-									&nbsp;
-									<input type="radio" name="rating" value="2">
-									&nbsp;
-									<input type="radio" name="rating" value="3">
-									&nbsp;
-									<input type="radio" name="rating" value="4">
-									&nbsp;
-									<input type="radio" name="rating" value="5">
-									&nbsp;Хорошо
-								</div>
-							</div><br>
-							<script src="https://captcha-api.yandex.ru/captcha.js" defer=""></script>
-							<fieldset><!--legend></legend-->
-								<div class="form-group required"><!--label class="col-sm-2 control-label"></label-->
-									<div class="col-sm-12">
-										<div id="captcha-container" class="smart-captcha"
-											data-sitekey="ysc1_bxeHt1aMzNcNgMssEXtBLRqxSDl86UCtXagNDDnB839f3b95"
-											data-testid="smartCaptcha-container" style="height: 0px;">
-											<div style="display: none;"><iframe frameborder="0"
-													src="https://captcha-api.yandex.ru/backend.636bb879d1085041bc19.html?sitekey=ysc1_bxeHt1aMzNcNgMssEXtBLRqxSDl86UCtXagNDDnB839f3b95&amp;theme=light&amp;hl=ru&amp;host=chipgifts.ru&amp;href=https%3A%2F%2Fchipgifts.ru%2Fkatalog%2Faksesuari%2Fmoft-laptop-stand&amp;test=false&amp;webview=false&amp;hideChallengeContainer=false"
-													aria-hidden="true" allow="encrypted-media *;"
-													style="display: block; width: 100%; height: 100%; z-index: 0; transform: translate3d(0px, 0px, 0px);"
-													data-testid="backend-iframe" title="SmartCaptcha backend"></iframe>
-											</div><input type="hidden" name="smart-token"
-												data-testid="smart-token"><iframe frameborder="0"
-												src="https://captcha-api.yandex.ru/checkbox.ru.4fdec4f0c66230612adf.html?sitekey=ysc1_bxeHt1aMzNcNgMssEXtBLRqxSDl86UCtXagNDDnB839f3b95&amp;theme=light&amp;hl=ru&amp;host=chipgifts.ru&amp;href=https%3A%2F%2Fchipgifts.ru%2Fkatalog%2Faksesuari%2Fmoft-laptop-stand&amp;test=false&amp;webview=false&amp;hideChallengeContainer=false"
-												aria-hidden="false" allow="encrypted-media *;"
-												style="display: block; width: 100%; height: 100%; z-index: 0; transform: translate3d(0px, 0px, 0px);"
-												data-testid="checkbox-iframe"
-												title="SmartCaptcha checkbox widget"></iframe>
+							<div class="frm-content-wrap">
+								<div class="frm-row">
+									<div class="frm-field field-rate">
+										<div class="field-title">На сколько вы довольны покупкой</div>
+										<div class="field-content">
+											<div class="frm-rate-set">
+												<input type="radio" name="rate-set" id="rate-set01">
+												<input type="radio" name="rate-set" id="rate-set02">
+												<input type="radio" name="rate-set" id="rate-set03">
+												<input type="radio" name="rate-set" id="rate-set04" checked>
+												<input type="radio" name="rate-set" id="rate-set05">
+												<label for="rate-set01" class="frm-rate"></label>
+												<label for="rate-set02" class="frm-rate"></label>
+												<label for="rate-set03" class="frm-rate"></label>
+												<label for="rate-set04" class="frm-rate"></label>
+												<label for="rate-set05" class="frm-rate"></label>
+											</div>
 										</div>
-									</div><br>
+									</div>
 								</div>
-							</fieldset>
-							<div class="buttons">
-								<div class="pull-right"><button type="button" id="button-review"
-										data-loading-text="Загрузка ..." class="btn btn-primary button">Отправить
-										отзыв</button></div>
+								<div class="frm-row">
+									<div class="frm-field">
+										<div class="field-title">Ваше имя</div>
+										<div class="field-content">
+											<input type="text" class="form-control type-input" placeholder="">
+										</div>
+									</div>
+								</div>
+								<div class="frm-row">
+									<div class="frm-field">
+										<div class="field-title">Email</div>
+										<div class="field-content">
+											<input type="text" class="form-control type-input" placeholder="">
+										</div>
+									</div>
+								</div>
+								<div class="frm-row">
+									<div class="frm-field">
+										<div class="field-title">Плюсы</div>
+										<div class="field-content">
+											<input type="text" class="form-control type-input" placeholder="">
+										</div>
+									</div>
+								</div>
+								<div class="frm-row">
+									<div class="frm-field">
+										<div class="field-title">Минусы</div>
+										<div class="field-content">
+											<input type="text" class="form-control type-input" placeholder="">
+										</div>
+									</div>
+								</div>
+								<div class="frm-row">
+									<div class="frm-field">
+										<div class="field-content">
+											<div class="frm-field-file js-field-file">
+												<input type="file" class="js-field-input">
+												<button type="button" class="btn button-attach button-file-attach js-file-button-attach">
+													<div class="button-ico">
+														<img src="./img/icons/attach.svg" alt="">
+													</div>
+													<span class="button-title file-name" data-title="Прикрепить фотографии"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="frm-row">
+									<div class="frm-field">
+										<div class="field-title">Комментарий</div>
+										<div class="field-content">
+											<textarea class="form-control type-input"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="frm-row-submit">
+									<div class="frm-field field-info">Нажимая на кнопку, вы подтверждаете, что соглашаетесь с  &nbsp; <a href="" class="link-main">правилами пользования сайтом</a></div>
+									<div class="frm-field field-submit">
+                                        <button type="submit" class="btn">
+                                            <div class="button-title">Отправить</div>
+                                        </button>
+                                    </div>
+								</div>
 							</div>
-						</form>
+						</div>
+						<!--/form-review-box-->
+						
 					</div>
 				</div>
 			</div>
