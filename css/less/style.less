@@ -1,4 +1,14 @@
-
+.footer-main {
+	p {
+		img {
+			display: inline-block;
+			width: 20px;
+			margin-right: 4px;
+			margin-top: -4px;
+			vertical-align: middle;
+		}
+	}
+}
 .header-main-panel {
 	.catalog-submenu-wrap {
 		background: #333745;
@@ -2236,6 +2246,11 @@ body.popup-open {
 	
 }
 @media (min-width: 1024px) {
+	body {
+		&:has(.header-main-panel .catalog-inner-wrap .btn-menus.active) {
+			overflow: hidden;
+		}
+	}
 	.header-main-panel {
 		.catalog-inner-wrap {
 			position: static;
@@ -2243,7 +2258,7 @@ body.popup-open {
 				position: static;
 			}
 			.active+.catalog-submenu-wrap {
-				display: block;
+				display: flex;
 			}
 			.btn-menu {
 				.btn-menu-toggle {
@@ -2265,9 +2280,11 @@ body.popup-open {
 			padding: 30px;
 			display: none;
 			animation: fadein ease 0.2s;
+			max-height: calc(100vh - 180px);
+			flex-direction: column;
 			&:before {
 				content: "";
-				display: block;
+				display: none;
 				position: absolute;
 				top: 30px;bottom: 30px;left: 330px;
 				width: 1px;
@@ -2278,6 +2295,52 @@ body.popup-open {
 				display: block;
 				position: relative;
 				width: 300px;
+				border-right: 1px solid #fff;
+				max-height: 100%;
+				flex: 1;
+				overflow-y: auto;
+				&>li {
+					&:hover {
+						.btn-menu {
+							color: var(--clr-att);
+							.button-ico {
+								filter: none;
+							}
+						}
+					}
+				}
+				&::-webkit-scrollbar {
+					height: 8px;
+					width: 8px;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: var(--clr-att);
+					border-right: 4px solid #333745;
+				}
+				&::-webkit-scrollbar-thumb:hover {
+					background-color: var(--clr-att);
+					border-right: 1px solid #333745;
+				}
+				&::-webkit-scrollbar-button:vertical:start:decrement {
+					background-color: transparent;
+					width: 0;
+					height: 0;
+				}
+				&::-webkit-scrollbar-button:vertical:end:increment {
+					background-color: transparent;
+					width: 0;
+					height: 0;
+				}
+				&::-webkit-scrollbar-button:horizontal:start:decrement {
+					background-color: transparent;
+					width: 0;
+					height: 0;
+				}
+				&::-webkit-scrollbar-button:horizontal:end:increment {
+					background-color: transparent;
+					width: 0;
+					height: 0;
+				}
 				&:not(:has(:hover)) {
 					&>li {
 						&:first-child {

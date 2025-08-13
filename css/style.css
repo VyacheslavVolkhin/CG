@@ -1,3 +1,10 @@
+.footer-main p img {
+  display: inline-block;
+  width: 20px;
+  margin-right: 4px;
+  margin-top: -4px;
+  vertical-align: middle;
+}
 .header-main-panel .catalog-submenu-wrap {
   background: #333745;
 }
@@ -2275,6 +2282,9 @@ body.popup-open {
   }
 }
 @media (min-width: 1024px) {
+  body:has(.header-main-panel .catalog-inner-wrap .btn-menus.active) {
+    overflow: hidden;
+  }
   .header-main-panel .catalog-inner-wrap {
     position: static;
   }
@@ -2284,7 +2294,8 @@ body.popup-open {
     position: static;
   }
   .header-main-panel .catalog-inner-wrap .active + .catalog-submenu-wrap {
-    display: block;
+    display: -ms-flexbox;
+    display: flex;
   }
   .header-main-panel .catalog-inner-wrap .btn-menu .btn-menu-toggle {
     display: none;
@@ -2304,10 +2315,13 @@ body.popup-open {
     padding: 30px;
     display: none;
     animation: fadein ease 0.2s;
+    max-height: calc(100vh - 180px);
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .header-main-panel .catalog-submenu-wrap:before {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     top: 30px;
     bottom: 30px;
@@ -2320,6 +2334,49 @@ body.popup-open {
     display: block;
     position: relative;
     width: 300px;
+    border-right: 1px solid #fff;
+    max-height: 100%;
+    -ms-flex: 1;
+        flex: 1;
+    overflow-y: auto;
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main > li:hover .btn-menu {
+    color: var(--clr-att);
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main > li:hover .btn-menu .button-ico {
+    filter: none;
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main::-webkit-scrollbar-thumb {
+    background-color: var(--clr-att);
+    border-right: 4px solid #333745;
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main::-webkit-scrollbar-thumb:hover {
+    background-color: var(--clr-att);
+    border-right: 1px solid #333745;
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main::-webkit-scrollbar-button:vertical:start:decrement {
+    background-color: transparent;
+    width: 0;
+    height: 0;
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main::-webkit-scrollbar-button:vertical:end:increment {
+    background-color: transparent;
+    width: 0;
+    height: 0;
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main::-webkit-scrollbar-button:horizontal:start:decrement {
+    background-color: transparent;
+    width: 0;
+    height: 0;
+  }
+  .header-main-panel .catalog-submenu-wrap .menu-main::-webkit-scrollbar-button:horizontal:end:increment {
+    background-color: transparent;
+    width: 0;
+    height: 0;
   }
   .header-main-panel .catalog-submenu-wrap .menu-main:not(:has(:hover)) > li:first-child .catalog-submenu-inner {
     display: block;
